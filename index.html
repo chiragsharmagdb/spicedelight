@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Delight - Authentic Indian Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Spice<span>Delight</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Authentic Indian Cuisine</h1>
+            <p>Experience the rich flavors and spices of India in every bite. Our chefs bring generations of culinary expertise to your plate.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Welcome to Spice Delight</h2>
+                    <p>Founded in 2005, Spice Delight has been serving authentic Indian cuisine with a modern twist. Our journey began in a small kitchen in Mumbai, where our founder, Chef Raj Patel, dreamed of sharing the vibrant flavors of India with the world.</p>
+                    <p>Today, we continue that tradition with carefully sourced ingredients, traditional cooking methods, and a passion for creating memorable dining experiences.</p>
+                    <p>Every dish tells a story - from the street foods of Delhi to the royal kitchens of Rajasthan, we bring India's diverse culinary heritage to your table.</p>
+                    <a href="#menu" class="btn">View Our Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/chef.jpg" alt="Indian Chef Cooking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All Items</button>
+                <button class="tab-btn" data-category="starters">Starters</button>
+                <button class="tab-btn" data-category="mains">Main Courses</button>
+                <button class="tab-btn" data-category="breads">Breads</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="images/samosa.jpg" alt="Samosa">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Vegetable Samosa</h3>
+                            <span>$49.00</span>
+                        </div>
+                        <p class="menu-item-desc">Crispy pastry filled with spiced potatoes and peas, served with mint chutney.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="images/paneertikka.jfif" alt="Paneer Tikka">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Paneer Tikka</h3>
+                            <span>$199.00</span>
+                        </div>
+                        <p class="menu-item-desc">Marinated cottage cheese grilled to perfection with bell peppers and onions.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="images/butterchicken.jfif" alt="Butter Chicken">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Butter Chicken</h3>
+                            <span>$399.00</span>
+                        </div>
+                        <p class="menu-item-desc">Tender chicken in a rich tomato and butter sauce with aromatic spices.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="images/lambroganjosh.jpg" alt="Lamb Rogan Josh">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Lamb Rogan Josh</h3>
+                            <span>$299.00</span>
+                        </div>
+                        <p class="menu-item-desc">Aromatic lamb curry with flavors of Kashmiri spices and yogurt.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="images/dalmakhani.jpg" alt="Dal Makhani">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Dal Makhani</h3>
+                            <span>$179.00</span>
+                        </div>
+                        <p class="menu-item-desc">Creamy black lentils slow-cooked with butter and spices.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breads -->
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-img">
+                        <img src="images/garlicnaan.jpg" alt="Garlic Naan">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Garlic Naan</h3>
+                            <span>$59.00</span>
+                        </div>
+                        <p class="menu-item-desc">Soft leavened bread baked in tandoor with fresh garlic and herbs.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="breads">
+                    <div class="menu-item-img">
+                        <img src="images/roti.jpg" alt="Roti">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Roti</h3>
+                            <span>$19.00</span>
+                        </div>
+                        <p class="menu-item-desc">Whole wheat unleavened flatbread cooked on a griddle.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-img">
+                        <img src="images/gulabjamun.webp" alt="Gulab Jamun">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Gulab Jamun</h3>
+                            <span>$49.00</span>
+                        </div>
+                        <p class="menu-item-desc">Soft milk dumplings soaked in rose-scented sugar syrup.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-img">
+                        <img src="images/kheer.avif"alt="Kheer">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Kheer</h3>
+                            <span>$99.00</span>
+                        </div>
+                        <p class="menu-item-desc">Traditional rice pudding with cardamom, nuts, and saffron.</p>
+                        <div class="add-to-cart">
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-img">
+                            <img src="images/person3.jfif" alt="Arvind Kumar">
+                        </div>
+                        <div class="review-info">
+                            <h4>Arvind Kumar</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The Butter Chicken at Spice Delight is absolutely divine! The flavors are perfectly balanced, and the chicken is so tender. I keep coming back for more!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-img">
+                            <img src="images/person2.jfif" alt="Ms.vishali">
+                        </div>
+                        <div class="review-info">
+                            <h4>Ms.vishali</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-img">
+                            <img src="images/person1.jfif" alt="Suresh Kumar">
+                        </div>
+                        <div class="review-info">
+                            <h4>Suresh Kumar</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine dining. It can be expensive but worth it and they do different deals on different nights so it’s worth checking them out before you book. Highly recommended.."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Spice Delight</h3>
+                    <p>Bringing authentic Indian flavors to your table since 2005. Our passion for traditional recipes and quality ingredients sets us apart.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/spicedelightgdb?igsh=MTJlbGU3aTRhb3M4Nw==q"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> #006, Sua Road , Gidderbaha</p>
+                    <p><i class="fas fa-phone"></i> +91 6284084471</p>
+                    <p><i class="fas fa-envelope"></i> chiragsharmagdb@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 11:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spice Delight. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <div class="close-popup">&times;</div>
+            <h3 class="popup-title">Item Added to Cart!</h3>
+            <p class="popup-message">Your selected item has been added to your cart. You can continue shopping or proceed to checkout.</p>
+            <button class="btn view-cart-btn">View Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <div class="close-cart">&times;</div>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <div class="cart-total-row">
+                <span class="cart-total-title">Subtotal:</span>
+                <span class="cart-total-price" id="cart-subtotal">Rs. 0.00</span>
+            </div>
+            <div class="cart-total-row">
+                <span class="cart-total-title">Tax (5%):</span>
+                <span class="cart-total-price" id="cart-tax">Rs. 0.00</span>
+            </div>
+            <div class="cart-total-row">
+                <span class="cart-total-title">Total:</span>
+                <span class="cart-total-price" id="cart-total">Rs 0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-count" id="cart-count">0</div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
